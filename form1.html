@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulaire</title>
+</head>
+<body>
+  
+    <form  action="form1.php" method="POST">
+        <label for="nom">Votre Nom et Prénom :</label>
+        <input type="text" id="nom" name="nom" required><br>
+        <br>
+
+        <label for="email">Votre e-mail :</label>
+        <input type="email" id="email" name="email" required><br>
+        <br>
+
+        <label for="tél">Votre Numéro de tél/WhatsApp :</label>
+        <input type="text" id="num" name="num" required><br>
+        <br>
+
+        <label for="départ">Départ (Ville/Aéroport) :</label>
+        <select id="dép" name="dep">
+          <option value="0">Les Aéroports</option>
+          <option value="1">Tunis Carthage</option>
+          <option value="2">Enfidha Hammamet</option>
+          <option value="3">Monastir</option>
+          <option value="4">Djerba-Zarzis</option>
+        </select><br>
+        
+        <br>
+
+        <label for="déstination">Votre déstination :</label>
+        <input type="text" id="dés" name="des" required><br>
+        <br>
+
+        <label for="date">Date de départ :</label>
+        <input type="date" id="Date" name="date" required><br>
+        <br>
+
+        <label for="Heure">Heure de départ :</label>
+        <input type="time" id="heure" name="heure" required><br>
+        <br>
+
+        <label for="nombre">Nombres de PAX et Valises :</label>
+        <input type="number" id="valises" name="valises" required><br>
+        <br>
+
+        <label for="vol">Numéro de Vol :</label>
+        <input type="text" id="vol" name="vol" required><br>
+        <br>
+        
+        <label for="message">Commentaires :</label>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+        <br>
+        
+        <input class="btn2" type="submit" value="Envoyer" onclick="return ValiderFormulaire()">
+        <input class="btn2" type="submit" value="Annuler">
+      </form>
+      <script language="javascript">
+        function ValiderFormulaire(){
+            var nom = document.getElementById('nom').value.trim().toUpperCase();
+            var email = document.getElementById('email').value.trim();
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            var numéro = document.getElementById('num').value.trim();
+            var départ = document.getElementById('dép').value;
+            var déstination = document.getElementById('dés').value.trim();
+            var date = document.getElementById('Date').value.trim();
+            var heure = document.getElementById('heure').value.trim();
+            var valises = document.getElementById('valises').value.trim();
+            var vol = document.getElementById('vol').value.trim();
+            var flightNumberPattern = /^[A-Za-z]{2}\d{3}$/;
+            var message = document.getElementById('message').value.trim();
+            d=new Date();
+            j=date.substring(0,2);
+            m=date.substring(3,5);
+            a=date.substring(6,date.length);
+            d1=new Date(a,m-1,j);
+            if((nom=="")||(nom<"A")||(nom>"Z")){
+              alert("vérifier votre nom et prénom");
+              return false;
+            }
+            if (!emailRegex.test(email)) {
+              alert("Adresse e-mail invalide ! Veuillez saisir une adresse e-mail valide.");
+              return false;
+            }
+            if((numéro=="")||(numéro.length>11)){
+              alert("vérifier votre numéro de téléphone");
+              return false;
+            }
+            if(départ==0){
+              alert("Il faut sélectionner l'aéroport");
+              return false;
+            }
+            if (déstination==""){
+                alert("Vérifier votre déstination")
+            }
+            if( (valises=="" )||(isNaN(valises) || parseInt(valises) < 0)) {
+                alert("Veuillez saisir un nombre de valises valide et positif.");
+                return false;
+                }
+             if (!flightNumberPattern.test(vol)) {
+                 alert("Le numéro de vol doit être au format 'AA123', où 'AA' sont des lettres et '123' sont des chiffres.");
+                 return false; 
+                 }
+          }
+
+      </script>
+
+</body>
+</html>

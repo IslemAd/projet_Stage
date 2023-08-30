@@ -1,0 +1,269 @@
+
+
+
+
+.cc-navbar{
+    background-color: rgba(0, 0, 0, 0.55);
+    font-family:'Merriweather',serif ;
+    box-shadow: 1px ,1px 3px rgb(231, 5, 5);
+}
+.cc-navbar .nav-link{
+    border-bottom: 1px solid transparent;
+    transition: padding-bottom .4s ease-in-out , border-color .3s ease;
+}
+.cc-navbar .nav-link:hover {
+    padding-bottom: 20px;
+    border-bottom-color: rgb(231, 5, 5);
+}
+
+.btn-order{
+    color: aliceblue ;
+    border-color:rgb(231, 5, 5);
+    transition: 0.5s;
+}
+.btn-order:hover,
+.btn-order:active{
+    color: aliceblue;
+    background-color:rgb(231, 5, 5);
+}
+.A1{position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.btn1{
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family:Arial, Helvetica, sans-serif;
+   
+}
+.btn1{
+    font-size: 16px;
+    color:   rgb(255, 255, 255);
+    
+    transition: 0.5s;
+    border-color:  rgb(255, 80, 80);
+    background-color: rgb(255, 80, 80);
+}
+.btn1:hover,
+.btn1:active{
+    font-size: 16px;
+    color: rgb(209, 219, 228);
+    border-color:  rgb(231, 5, 5);
+    background-color: rgb(231, 5, 5);
+}
+
+form {
+    margin: 0;
+    padding: 0;
+    padding-left: 35%;
+
+    
+  }
+  /* Style pour les étiquettes des champs */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Style pour les champs de saisie */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"],
+  input[type="time"],
+  input[type="number"],
+  input[type="text"],
+  input[type="textarea"],
+
+ 
+
+  select {
+    width: 35%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #000000;
+   
+  }
+  
+  /* Style pour les champs de saisie lorsqu'ils sont en focus */
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  input[type="date"]:focus,
+  input[type="time"]:focus,
+  input[type="number"]:focus,
+  input[type="text"]:focus,
+  input[type="textarea"]:focus,
+
+
+  select:focus {
+    outline: none;
+    border-color: #e03f3f;
+  }
+ 
+  
+.btn2{
+    font-size: 18px;
+    color: rgb(255, 246, 246) ;
+   
+    transition: 0.5s;
+    border-radius: 0%;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+    border-color:  rgb(243, 30, 30);
+    background-color: rgb(243, 30, 30);
+}
+.btn2:hover,
+.btn2:active{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    background-color:rgb(231, 5, 5);
+}
+.A2{
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Times New Roman', Times, serif;
+    color: #242121;
+    font-size: 30px;
+}
+.colored-word{
+    color: rgb(231, 5, 5);
+
+}
+.btn3{
+    width: 180px;
+    height: 50px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family:Arial, Helvetica, sans-serif;
+   
+}
+.btn3{
+    font-size: 18px;
+    color:   rgb(255, 255, 255);
+   
+    transition: 0.5s;
+    border-color:  rgb(255, 80, 80);
+    background-color: rgb(255, 80, 80);
+}
+.btn3:hover,
+.btn3:active{
+    font-size: 18px;
+    color: rgb(209, 219, 228);
+    border-color:  rgb(231, 5, 5);
+    background-color: rgb(231, 5, 5);
+}
+form {
+    margin: 0;
+    padding: 0;
+    padding-left: 35%;
+
+    
+  }
+  /* Style pour les étiquettes des champs */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="password"],
+  input[type="text"],
+
+
+  select {
+    width: 35%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #000000;
+   
+  }
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  input[type="password"]:focus,
+  input[type="text"]:focus,
+
+
+
+  select:focus {
+    outline: none;
+    border-color: #e03f3f;
+  }
+  h6{
+    position: absolute;
+    text-align: center;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+.h6-1{
+    color: #a02e2e;
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+.h6-2{
+    color: #a02e2e;
+    position: absolute;
+    top:60%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+.h6-3{
+    color: #a02e2e;
+    position: absolute;
+    top: 60%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+.h7-1{
+    position: absolute;
+    top: 76%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:15px;
+    text-align: center;
+    
+}
+.h7-2{
+    position: absolute;
+    top: 78%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:15px;
+    text-align: center;
+}
+.h7-3{
+    position: absolute;
+    top: 73%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:15px;
+    text-align: center;
+}
+ 
